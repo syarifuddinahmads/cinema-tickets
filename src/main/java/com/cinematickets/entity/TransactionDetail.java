@@ -26,4 +26,23 @@ public class TransactionDetail {
     
     @NotBlank(message = "Qty is mandatory")
     private int Qty;
+    
+    public void setId_trans(int Id){
+        this.Id_transaction=Id;
+    }
+    public int getId_trans(){
+        return Id_transaction;
+    }
+    public void setTipe(char tipe){
+        this.tipe=tipe;
+    }
+    public char getTipe(){
+        return tipe;
+    }
+    public void setQty(int Qty){
+        this.Qty=Qty;
+    }
+    public int getQty(){
+        return Qty;
+    }
 }
