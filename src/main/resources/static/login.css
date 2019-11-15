@@ -8,3 +8,11 @@ and open the template in the editor.
     Author     : udin
 */
 
+*{
+    position: relative;
+    width: 1440px;
+    height: 900px;
+
+    background: #F5EBC9;
+    
+}
