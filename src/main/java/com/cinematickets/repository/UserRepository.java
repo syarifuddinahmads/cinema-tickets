@@ -5,10 +5,13 @@
  */
 package com.cinematickets.repository;
 
+import com.cinematickets.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 /**
  *
  * @author udin
  */
-public class UserRepository {
-    
+public interface UserRepository extends JpaRepository<User, Long>{
+    User findByUsername(String username);
 }

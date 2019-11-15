@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.cinematickets.repository;
-
-import com.cinematickets.entity.Bioskop;
-import org.springframework.data.jpa.repository.JpaRepository;
+package com.cinematickets.services;
 
 /**
  *
  * @author udin
  */
-public interface BioskopRepository extends JpaRepository<Bioskop, Long>{
+
+public interface SecurityService {
+    
+    String findLoggedInUsername();
+    
+    void autoLogin(String username, String password);
     
 }

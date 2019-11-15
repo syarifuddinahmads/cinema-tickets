@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.cinematickets.repository;
+package com.cinematickets.services;
 
-import com.cinematickets.entity.Bioskop;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author udin
  */
-public interface BioskopRepository extends JpaRepository<Bioskop, Long>{
+@Service
+public class UserServiceImpl {
     
 }

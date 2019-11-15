@@ -5,10 +5,13 @@
  */
 package com.cinematickets.repository;
 
+import com.cinematickets.entity.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
 /**
  *
  * @author udin
  */
-public class CustomerRepository {
+public interface CustomerRepository extends JpaRepository<Customer, Long>{
     
 }

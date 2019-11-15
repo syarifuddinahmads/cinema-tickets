@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 /**
@@ -11,13 +12,14 @@ import javax.validation.constraints.NotBlank;
  * @author yogi-06926
  */
 @Entity
+@Table(name = "customer")
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
     @NotBlank(message = "Name is mandatory")        
-    private int id_user;
+    private int idUser;
 
     @NotBlank(message = "Name is mandatory")
     private String fullname;
@@ -47,15 +49,6 @@ public class Customer {
 
     public String getFullname() {
         return fullname;
-    }
-
-    public void setId_user(int id_user) {
-        this.id_user = id_user;
-    }
-
-    public int getId_user() {
-        return id_user;
-    }
-    
+    }    
     
 }

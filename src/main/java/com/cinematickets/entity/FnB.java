@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 /**
@@ -11,13 +12,14 @@ import javax.validation.constraints.NotBlank;
  * @author yogi-06926
  */
 @Entity
-public class fNb {
+@Table(name = "fnb")
+public class FnB {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
     @NotBlank(message = "ID USER is mandatory")
-    private long id_user;
+    private long idUser;
     
     @NotBlank(message = "Name is mandatory")
     private String name;
@@ -39,12 +41,12 @@ public class fNb {
         this.id = id;
     }
 
-    public long getId_user() {
-        return id_user;
+    public long getIdUser() {
+        return idUser;
     }
 
-    public void setId_user(long id_user) {
-        this.id_user = id_user;
+    public void setIdUser(long idUser) {
+        this.idUser = idUser;
     }
 
     public String getName() {

@@ -5,10 +5,15 @@
  */
 package com.cinematickets.entity;
 
+import java.util.Set;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
 /**
@@ -17,6 +22,7 @@ import javax.validation.constraints.NotBlank;
  */
 
 @Entity
+@Table(name = "users")
 public class User {
 
     @Id
@@ -31,9 +37,10 @@ public class User {
     
     @NotBlank(message = "Password is mandatory")
     private String password;
- 
-    @NotBlank(message = "Role is mandatory")
-    private int role;  
+    
+    @ManyToMany
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles;
 
     public Long getId() {
         return id;
@@ -67,14 +74,12 @@ public class User {
         this.password = password;
     }
 
-    public int getRole() {
-        return role;
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 
-    public void setRole(int role) {
-        this.role = role;
+    public Set<Role> getRoles() {
+        return roles;
     }
-    
-    
-    
+
 }

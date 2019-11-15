@@ -5,13 +5,13 @@
  */
 package com.cinematickets.repository;
 
-import com.cinematickets.entity.Bioskop;
+import com.cinematickets.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  *
  * @author udin
  */
-public interface BioskopRepository extends JpaRepository<Bioskop, Long>{
+public interface RoleRepository extends JpaRepository<Role, Long>{
     
 }

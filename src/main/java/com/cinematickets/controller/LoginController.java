@@ -5,10 +5,13 @@
  */
 package com.cinematickets.controller;
 
+import org.springframework.stereotype.Controller;
+
 /**
  *
  * @author udin
  */
+@Controller
 public class LoginController {
     
 }
