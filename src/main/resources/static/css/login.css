@@ -21,6 +21,13 @@ body{
 }
 .btn{
     background:  #EA4C89 !important;
-    width: 191px;
+    width: 246px;
     
 }
+.Card-Link{
+    text-align: center !important;
+    color: #000000;
+    
+}
+
+
