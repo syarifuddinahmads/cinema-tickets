@@ -8,11 +8,19 @@ and open the template in the editor.
     Author     : udin
 */
 
-*{
-    position: relative;
-    width: 1440px;
-    height: 900px;
+body{
 
     background: #F5EBC9;
+    
+}
+.card{
+    margin: 12.5% auto;
+}
+.form-group{
+    background:#E5E5E5;
+}
+.btn{
+    background:  #EA4C89 !important;
+    width: 191px;
     
 }

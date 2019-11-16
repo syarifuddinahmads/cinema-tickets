@@ -10,11 +10,28 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
-        <link rel="stylesheet" th:href="@{static/login.css}"/>
+        <link rel="stylesheet" th:href="@{css/login.css}"/>
     </head>
     <body>
-        <div>coba lojhh</div>
-        <script type="text/javascript" th:src="@{webjars/jquery/3.3.1/jquery.min.js}"></script>
-        <script type="text/javascript" th:src="@{webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
+                <div class="card" style="width: 18rem;">
+           <div class="card-body">
+               <form>
+                   <div class="form-group" >
+                       
+                       <input type="text" class="form-control" placeholder="Username">
+                       
+                   </div>
+                   <div class="form-group">
+                       
+                       <input type="password" class="form-control" placeholder="Password">
+                   </div>
+                   
+                   <button type="submit" class="btn btn-primary">Submit</button>
+               </form>
+           </div>
+         </div>
+        
     </body>
+    <script type="text/javascript" th:src="@{webjars/jquery/3.3.1/jquery.min.js}"></script>
+        <script type="text/javascript" th:src="@{webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
 </html>
