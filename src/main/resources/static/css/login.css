@@ -8,11 +8,32 @@ and open the template in the editor.
     Author     : udin
 */
 
-*{
-    position: relative;
-    width: 1440px;
-    height: 900px;
+body{
 
     background: #F5EBC9;
     
 }
+.img1{
+    background-color: #E5E5E5;
+}
+.card{
+    margin: 12.5% auto;
+}
+.form-group{
+    color: #E5E5E5;
+}
+.btn{
+    background:  #EA4C89 !important;
+    width: 246px;
+    
+}
+.text-center{
+    color: #E5E5E5 !important;
+}
+.Card-Link{
+    text-align: center !important;
+    color: #000000;
+    
+}
+
+

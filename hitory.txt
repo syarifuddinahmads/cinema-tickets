@@ -1,0 +1,5 @@
+git add .
+git commit -m "yogi 16-11-2019"
+git config --global user.email "alyhoe41@gmail.com"
+git config --global user.name "yogiprasetio"
+
