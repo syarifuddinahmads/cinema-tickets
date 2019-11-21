@@ -13,16 +13,22 @@ body{
     background: #F5EBC9;
     
 }
+.img1{
+    background-color: #E5E5E5;
+}
 .card{
     margin: 12.5% auto;
 }
 .form-group{
-    background:#E5E5E5;
+    color: #E5E5E5;
 }
 .btn{
     background:  #EA4C89 !important;
     width: 246px;
     
+}
+.text-center{
+    color: #E5E5E5 !important;
 }
 .Card-Link{
     text-align: center !important;
