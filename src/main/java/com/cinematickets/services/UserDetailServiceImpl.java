@@ -24,6 +24,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @author udin
  */
 
+@Service
 public class UserDetailServiceImpl implements UserDetailsService {
 
     @Autowired
